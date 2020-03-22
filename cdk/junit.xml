@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" time="2.392">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2020-03-22T17:16:37" time="1.676" tests="3">
+    <testcase classname=" Total Lambdas" name=" Total Lambdas" time="0.043">
+    </testcase>
+    <testcase classname=" Runtime Check" name=" Runtime Check" time="0">
+    </testcase>
+    <testcase classname=" Code Not Inline" name=" Code Not Inline" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

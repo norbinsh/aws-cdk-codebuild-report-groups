@@ -1,0 +1,28 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - npm run --prefix cdk install
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - npm run --prefix cdk build
+      - npm run --prefix cdk synth
+      - npm run --prefix cdk test
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - cdk/myLambdaCfn.yml
+
+reports:
+  awsDevelopertoolsDemo-testReportGroup:
+    files:
+      - cdk/junit.xml
+    name: cfnTemplate
+    file-format: JunitXml
+    
