@@ -18,11 +18,11 @@ phases:
 artifacts:
   files:
     - cdk/myLambdaCfn.yml
+  name: cfnTemplate
 
 reports:
   awsDevelopertoolsDemo-testReportGroup:
     files:
       - cdk/junit.xml
-    name: cfnTemplate
     file-format: JunitXml
     
