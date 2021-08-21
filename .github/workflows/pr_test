@@ -1,4 +1,4 @@
-name: "Workflow"
+name: test
 on: pull_request
 jobs:
   build:
@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: "test"
         run: |
-        echo ${{ github.event.pull_request.title }}
+          echo ${{ github.event.pull_request.title }}
