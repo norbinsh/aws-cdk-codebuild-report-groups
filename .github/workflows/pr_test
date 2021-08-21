@@ -1,0 +1,9 @@
+name: "Workflow"
+on: pull_request
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "test"
+        run: |
+        echo ${{ github.event.pull_request.title }}
